@@ -19,3 +19,4 @@ Boca Raton, FL.
 2. Cressie, N. (1993), Statistics for Spatial Data (Revised
 edition). Wiley, NY.
 
+3. C. A. Calder, P. F. Craigmile, and J. Zhang (2009). Regional Spatial Modeling of Topsoil Geochemistry. Biometrics, 65, 206-215. 
