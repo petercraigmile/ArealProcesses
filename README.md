@@ -2,9 +2,9 @@
 
 Email questions about the code to pfc &lt;AT&gt; stat.osu.edu
 
-The statistical analysis of Areal (lattice) processes.
+The statistical analysis of areal (lattice) processes.
 
-Developed as a <a href="http://www.stat.osu.edu/~pfc/teaching/5012_spatial_statistics/">teaching tool</a> to demonstrate the simple analysis of Areal processes.  The code could certainly be further optimized for more serious applications.
+Developed as a <a href="http://www.stat.osu.edu/~pfc/teaching/5012_spatial_statistics/">teaching tool</a> to demonstrate the simple analysis of areal processes.  The code could certainly be further optimized for more serious applications.
 
 You will find examples of using this code on the <a href="http://www.stat.osu.edu/~pfc/teaching/5012_spatial_statistics/">Stats 5012: Spatial Statistics (Spring 2013)</a> website.
 
