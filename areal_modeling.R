@@ -1,10 +1,7 @@
 
 ## ======================================================================
 ## Functions for the areal modeling in R.
-##
-## Spatial Statistics M - Spring 2013
-## Created: Peter Craigmile, peter.craigmile@glasgow.ac.uk, Feb 2013
-## Contact: pfc@stat.osu.edu
+## Created: Peter Craigmile, pfc@stat.osu.edu, Feb 2013
 ##
 ## GNU GENERAL PUBLIC LICENSE, Version 3
 ## https://www.gnu.org/licenses/gpl-3.0.txt
@@ -48,7 +45,7 @@ Moran.I.perm.test <- function (y, W, show.perms=TRUE, num.perms=1000) {
   
   obs.I <- Moran.I(y, W)
 
-  ## Permute the data 1000 times, and calculate the I statistics.
+  ## Permute the data 'num.perms' times, and calculate the I statistics.
   perm.stats <- sapply(1:num.perms, function (k) Moran.I(sample(y), W))
   
   ## Produce a histogram of these statistics

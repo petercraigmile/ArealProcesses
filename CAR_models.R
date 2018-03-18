@@ -1,10 +1,7 @@
 
 ## ======================================================================
 ## Functions for the estimation of CAR processes using R.
-##
-## Spatial Statistics M - Spring 2013
-## Created: Peter Craigmile, peter.craigmile@glasgow.ac.uk, Feb 2013
-## Contact: pfc@stat.osu.edu
+## Created: Peter Craigmile, pfc@stat.osu.edu, Feb 2013
 ##
 ## GNU GENERAL PUBLIC LICENSE, Version 3
 ## https://www.gnu.org/licenses/gpl-3.0.txt
