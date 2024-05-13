@@ -65,6 +65,36 @@ Moran.I.perm.test <- function (y, W, show.perms=TRUE, num.perms=1000) {
 
 
 
+Moran.I.asympt <- function (y, W) {
+    ## ======================================================================
+    ## Purpose: Calculate Moran's I for data 'y' and proximity matrix 'W',
+    ##          using the aymptotic normal result.
+    ##
+    ## By: Peter Craigmile, peter.craigmile@hunter.cuny.edu
+    ## ======================================================================
+    
+    m <- length(y)
+    
+    A <- sum((W + t(W))^2/2)    
+    B <- sum((colSums(W) + rowSums(W))^2)    
+    C <- sum(W)^2
+    
+    I.mean <- -1/(m-1)
+    I.sd   <- sqrt((m * (m-1) * (m * A - B) - 2 * C) / ((m+1) * (m-1)^2 * C))
+        
+    z <- y - mean(y)
+    
+    obs.I <- m * sum(W * outer(z,z)) / (sum(W) * sum(z^2))
+    
+    p.value <- 2*pnorm(-abs(obs.I), I.mean, I.sd)
+    
+    list(statistic=obs.I,
+         parameter="I",
+         p.value=p.value)
+}
+
+
+
 
 plot.poly <- function (xx.polylist, aux.var, intervals,
                        legend.x, legend.y, ...) {
